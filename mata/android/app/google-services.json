@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457862477882",
+    "project_id": "chatappmata",
+    "storage_bucket": "chatappmata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457862477882:android:e30a9e7cfebdf864a15d03",
+        "android_client_info": {
+          "package_name": "com.example.mata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457862477882-5cbtl2ej383grc7k7jgb0ak07v3hve7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoJZhnKjZlacWqQ6ZTeFBG_NLZIYBvwXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457862477882-5cbtl2ej383grc7k7jgb0ak07v3hve7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
