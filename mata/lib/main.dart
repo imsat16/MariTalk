@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mata/BottomNavbar/BottomNavbar.dart';
 import 'package:mata/export.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: FloatBottNav(),
     );
   }
 }

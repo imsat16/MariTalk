@@ -1,3 +1,3 @@
 library exsomething;
 
-export 'HomePage.dart';
+export 'HomePage/HomePage.dart';
