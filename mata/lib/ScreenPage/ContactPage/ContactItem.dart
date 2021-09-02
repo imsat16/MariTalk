@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ChatPage extends StatelessWidget {
-  const ChatPage({Key? key}) : super(key: key);
+class ContactItem extends StatelessWidget {
+  const ContactItem({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class ChatPage extends StatelessWidget {
                       children: [
                         Container(
                           child: Text(
-                            'Azizi Asadel',
+                            'John Doe',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
@@ -50,7 +50,7 @@ class ChatPage extends StatelessWidget {
                         ),
                         Container(
                           child: Text(
-                            'Kamu Lagi Apa...',
+                            'Ini bio masing masing user',
                             style: TextStyle(color: Colors.grey[850]),
                           ),
                         ),
@@ -59,25 +59,6 @@ class ChatPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Column(
-                children: [
-                  Container(
-                      width: 20.0,
-                      height: 20.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(50)),
-                        color: Colors.blue[400],
-                      ),
-                      child: Center(
-                          child: Text(
-                        '1',
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      )))
-                ],
-              )
             ],
           ),
         ),

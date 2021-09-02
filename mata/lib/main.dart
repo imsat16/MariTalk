@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mata/BottomNavbar/BottomNavbar.dart';
 import 'package:mata/export.dart';
 
 void main() {
