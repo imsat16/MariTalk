@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:mata/export.dart';
+import 'package:mata/ItemExport.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({ Key? key }) : super(key: key);
 
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: List.generate(
-        20,
-        (index) => ChatItem(),
+    return Container(
+      child: ListView(
+        children: List.generate(
+          50,
+          (index) => ChatItem(),
+        ),
       ),
     );
   }

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:mata/ItemExport.dart';
 
 class ChatItem extends StatelessWidget {
-  const ChatItem({Key? key}) : super(key: key);
+  const ChatItem({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: ElevatedButton(
-        style:
-            ElevatedButton.styleFrom(primary: Colors.transparent, shadowColor: Colors.transparent),
-        onPressed: () {},
+        style: ElevatedButton.styleFrom(
+            primary: Colors.transparent, shadowColor: Colors.transparent),
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => ChatPage()));
+        },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -23,11 +27,11 @@ class ChatItem extends StatelessWidget {
                         width: 55.0,
                         height: 55.0,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(50)),
-                            color: Colors.redAccent,
-                            image: DecorationImage(
-                                image: AssetImage('assets/images/azizi.jpeg'))),
-                        // child: Image.asset('assets/images/azizi.jpeg')
+                          borderRadius: BorderRadius.all(Radius.circular(50)),
+                          color: Colors.redAccent,
+                          image: DecorationImage(
+                              image: AssetImage('assets/images/azizi.jpeg')),
+                        ),
                       )
                     ],
                   ),
@@ -40,9 +44,9 @@ class ChatItem extends StatelessWidget {
                           child: Text(
                             'John Doe',
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Colors.black),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
                           ),
                         ),
                         SizedBox(
@@ -51,7 +55,8 @@ class ChatItem extends StatelessWidget {
                         Container(
                           child: Text(
                             'Kamu Lagi Apa...',
-                            style: TextStyle(color: Colors.grey[850]),
+                            style: TextStyle(
+                                color: Theme.of(context).secondaryHeaderColor),
                           ),
                         ),
                       ],

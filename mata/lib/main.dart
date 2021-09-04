@@ -1,13 +1,8 @@
-import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter/material.dart';
-import 'package:mata/Auth/Authenticate.dart';
-// import 'package:mata/Auth/LoginScreen.dart';
-// import 'package:mata/BottomNavbar/BottomNavbar.dart';
-// import 'package:mata/export.dart';
+import 'package:mata/ItemExport.dart';
 
 Future main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -15,11 +10,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Theme.of(context).accentColor,
       title: 'Mari Talk',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+        accentColor: Colors.transparent,
+        primaryColor: Colors.black,
+        secondaryHeaderColor: Colors.grey[600],
       ),
+      darkTheme: ThemeData(
+          brightness: Brightness.dark,
+          accentColor: Colors.transparent,
+          primaryColor: Colors.white,
+          secondaryHeaderColor: Color.fromRGBO(209, 211, 212, 0.8)),
       home: FloatBottNav(),
     );
   }
