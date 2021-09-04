@@ -15,8 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Mari Talk',
       debugShowCheckedModeBanner: false,
-      home: Authenticate(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: FloatBottNav(),
     );
   }
 }

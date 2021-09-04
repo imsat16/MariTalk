@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mata/ScreenPage/Calls.dart';
-import 'package:mata/ScreenPage/Setting.dart';
-import 'package:mata/ScreenPage/contact.dart';
-import 'package:mata/ScreenPage/searchFriend.dart';
 import 'package:mata/export.dart';
 
 class FloatBottNav extends StatefulWidget {
@@ -17,8 +13,8 @@ class _FloatBottNavState extends State<FloatBottNav> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     TelpPage(),
-    FriendSearch(),
-    SettingPage()
+    Contact(),
+    ProfilePage()
   ];
   void _onItemTapped(int index) {
     setState(() {
@@ -33,7 +29,7 @@ class _FloatBottNavState extends State<FloatBottNav> {
         body: Stack(children: [
       _widgetOptions.elementAt(_currentIndex),
       Padding(
-        padding: const EdgeInsets.all(40),
+        padding: const EdgeInsets.all(50),
         child: Align(
           alignment: Alignment(0.0, 1.0),
           child: ClipRRect(
@@ -60,18 +56,10 @@ class _FloatBottNavState extends State<FloatBottNav> {
                   label: 'Business',
                   backgroundColor: Colors.blueGrey,
                 ),
-                // BottomNavigationBarItem(
-                //   icon: Icon(Icons.search),
-                //   label: 'Settings',
-                //   backgroundColor: Colors.blueGrey,
-                // ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.settings),
-                  // icon: ImageIcon(
-                  //   AssetImage("images/s.jpg"),
-                  //   // color: Color(0xFF3A5A98),
-                  //   size: 40,
-                  // ),
+                  icon: Icon(
+                    Icons.account_circle,
+                  ),
                   label: 'Settings',
                   backgroundColor: Colors.blueGrey,
                 ),
